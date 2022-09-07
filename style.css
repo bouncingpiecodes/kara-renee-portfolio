@@ -1,10 +1,7 @@
 body {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 75vh;
-    justify-content: flex-start;
-    background: black;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 h1 {
@@ -13,4 +10,25 @@ h1 {
 
 h2 {
     color: pink;
+}
+
+header {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    font-size: 22px;
+    color: white;
+    margin: 8px
+}
+
+header h1 {
+    font-size: 3em;
 }
