@@ -3,7 +3,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-
+    padding: 16px;
 }
 
 h1 {
@@ -19,7 +19,6 @@ header {
     align-items: center;
     border: 9px solid pink;
     padding: 0 16px;
-    margin-top: 30px;
 }
 
 nav {
@@ -55,8 +54,39 @@ header h1 {
 .section {
     display: flex;
     color: white;
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-inline: 20px;
+
 }
 
-.section .title {}
+.section .title {
+    border-right: 3px solid #91cfc4;
+    padding-right: 16px;
+    min-width: 150px; 
+    display: flex;
+    justify-content: space-between;
 
-.section .content {}
+}
+
+.section .content {
+    font-size: 2em;
+    color: pink;
+    margin-left: 16px;
+    margin-top: 12px;
+
+}
+
+.section h2 {
+    word-wrap:break-word;
+    font-size: 3em;
+    color: pink;
+    margin: 0 0 0 auto;
+    justify-content: end;
+    text-align: right;
+}
+.section .content p {
+    padding: 0;
+    margin: 0;
+}
