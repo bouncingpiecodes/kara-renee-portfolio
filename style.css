@@ -75,11 +75,29 @@ header h1 {
 }
 
 .section .content {
-  font-size: 2em;
+  font-size: 24px;
   color: pink;
   margin-left: 16px;
   margin-top: 12px;
   overflow: hidden;
+}
+
+.section .content .portfolio-image-container {
+  position: relative;
+  border: 1px solid black;
+}
+.section .content .portfolio-image-container:hover {
+  border: 1px dashed pink;
+}
+
+.section .content .portfolio-image-container h3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 16px;
+  background: white;
+  padding: 8px;
+  color: black;
 }
 
 .section h2 {
@@ -92,9 +110,20 @@ header h1 {
 }
 
 @media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding-bottom: 24px;
+    margin-left: unset;
+  }
+  nav a {
+    font-size: 16px;
+  }
   .section {
     display: block;
   }
+
   .section .title {
     display: block;
     border-right: none;
@@ -104,7 +133,18 @@ header h1 {
   .section h2 {
     text-align: left;
     margin-left: 16px;
+    font-size: 24px;
   }
+  .section .content p {
+    font-size: 20px;
+  }
+  .section .content .portfolio-image-container h3 {
+    font-size: 12px;
+  }
+}
+.sections-container {
+  border: 2px solid pink;
+  padding-bottom: 16px;
 }
 
 .section .content p {
@@ -129,8 +169,7 @@ li {
 }
 .content .smaller-work-images {
   display: flex;
-  display: column;
-  width: 50%;
+  width: 100%;
 }
 
 .content .my-work-images img {
