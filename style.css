@@ -1,111 +1,138 @@
 body {
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 h1 {
-    color: pink;
+  color: pink;
 }
 
 h2 {
-    color: pink;
+  color: pink;
+}
+
+.about-me-pic {
+  width: 50%;
+  margin-top: 16px;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    border: 9px solid pink;
-    padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border: 9px solid pink;
+  padding: 0 16px;
 }
 
 nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 nav a {
-    font-size: 22px;
-    color: white;
-    margin: 8px
+  font-size: 22px;
+  color: white;
+  margin: 8px;
 }
 
 header h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .hero {
-    background-image: url("images/flamingos.jpeg");
-    height: 200px;
-    background-size: 334px;
-    display: flex;
-    align-items: end;
+  background-image: url("images/flamingos.jpeg");
+  height: 200px;
+  background-size: 334px;
+  display: flex;
+  align-items: end;
 }
 
 .hero h2 {
-    margin-left: auto;
-    color: black;
-    background-color: white;
-    padding: 8px;
-    margin-right: 16px;
+  margin-left: auto;
+  color: black;
+  background-color: white;
+  padding: 8px;
+  margin-right: 16px;
 }
 
 .section {
-    display: flex;
-    color: white;
-    margin-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-inline: 20px;
-
+  display: flex;
+  color: white;
+  margin-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-inline: 20px;
+  overflow: hidden;
 }
 
 .section .title {
-    border-right: 3px solid #91cfc4;
-    padding-right: 16px;
-    min-width: 250px; 
-    display: flex;
-    justify-content: space-between;
-
+  border-right: 3px solid #91cfc4;
+  padding-right: 16px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section .content {
-    font-size: 2em;
-    color: pink;
-    margin-left: 16px;
-    margin-top: 12px;
-
+  font-size: 2em;
+  color: pink;
+  margin-left: 16px;
+  margin-top: 12px;
+  overflow: hidden;
 }
 
 .section h2 {
-    word-wrap:break-word;
-    font-size: 3em;
-    color: pink;
-    margin: 0 0 0 auto;
-    justify-content: end;
-    text-align: right;
+  word-wrap: break-word;
+  font-size: 3em;
+  color: pink;
+  margin: 0 0 0 auto;
+  justify-content: end;
+  text-align: right;
 }
+
+@media screen and (max-width: 992px) {
+  .section {
+    display: block;
+  }
+  .section .title {
+    display: block;
+    border-right: none;
+    border-bottom: 3px solid #91cfc4;
+  }
+
+  .section h2 {
+    text-align: left;
+    margin-left: 16px;
+  }
+}
+
 .section .content p {
-    padding: 0;
-    margin: 0;
-    
+  padding: 0;
+  margin: 0;
 }
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 li {
-    display: inline-block;
-    margin: 0 20px 0 0;
-    
+  display: inline-block;
+  margin: 0 20px 0 0;
 }
 .section a {
-    color: white;
+  color: white;
 }
 
 .content .my-work-images {
-    display:flex;
-    flex-direction: column;
+  width: 100%;
+}
+.content .smaller-work-images {
+  display: flex;
+  display: column;
+  width: 50%;
+}
+
+.content .my-work-images img {
+  width: 100%;
 }
